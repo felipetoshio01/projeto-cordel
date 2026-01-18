@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+/* ---- Configurações globais ---- */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* -- Variáveis -- */
+:root {
+    --font-header-title: Caveat, cursive;
+    --font-header-sub: 'Comic Neue', cursive;
+    --font-main-p: 'Comic Neue', cursive
+}
+
+body {
+    background-color: black;
+}
+
+/* ---- Header ---- */
+header {
+    padding: 24px;
+}
+
+/* -- Títulos -- */
+header h1, h2 {
+    color: white;
+    text-align: center;
+}
+/* Fontes */
+header h1 {
+    font: normal normal clamp(2rem, 10vw + 1rem, 6rem) var(--font-header-title);
+    margin-bottom: 16px;
+}
+
+header h2 {
+    font: normal 300 clamp(1.2rem, 2.5vw + 0.5rem, 2.5rem) var(--font-header-sub);
+    margin: 16px 0px;
+}
+
+
+/* Links */
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---- Main ---- */
+main {
+    background-color: white;
+
+}
+
+/* -- Sections -- */
+main section {
+    padding: 20px;
+}
+
+/* Que antecipa a imagem */
+section.border {
+    box-shadow: 0px 5px 12px 8px rgba(0, 0, 0, 0.304);
+    position: relative;
+    z-index: 1;
+}
+
+/* Com flor */
+section#flower-image {
+    background: black url(imagens/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
+}
+
+section#flower-image p {
+    display: inline-block;
+    color: white;
+    background: rgba(15, 15, 15, 0.619);
+    padding: 4px;
+    text-shadow: 3px 3px 8px black;
+}
+
+/* Com Livro */
+section#book-image {
+    background: black url(imagens/background002.jpg) left center no-repeat fixed;
+    background-size: cover;
+}
+
+section#book-image p {
+    display: inline-block;
+    color: white;
+    background: rgba(15, 15, 15, 0.619);
+    padding: 4px;
+    text-shadow: 3px 3px 8px black;
+}
+
+/* Uma div para uma estrofe */
+section > div {
+    padding: 20px 0px;
+}
+
+/* -- Parágrafos -- */
+p {
+    font: normal bold clamp(1rem, 3vw + 0.7rem, 2.2rem) var(--font-main-p);
+    line-height: 2em;
+}
+
+
+/* ---- Footer ---- */
+footer {
+    background-color: black;
+    border-top: 5px solid rgb(133, 133, 133);
+    padding: 12px 12px 56px 12px;
+}
+
+/* -- Parágrafo do Footer -- */
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    
+}
